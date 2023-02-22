@@ -8,6 +8,7 @@ public abstract class Title : MonoBehaviour
     private static GameObject infoPanel;
     private static TMP_Text titleTypeT;
     private static TMP_Text titleDescriptionT;
+    //ENCAPSULATION
     protected string titleType{private get; set;}
     protected string titleDescripion{private get; set;}
     void Start()
@@ -27,5 +28,6 @@ public abstract class Title : MonoBehaviour
         infoPanel.gameObject.SetActive(true);
         MakeSound();
     }
+    //ABSTRACTION
     protected abstract void MakeSound();
 }

@@ -9,6 +9,7 @@ public class WaterTitle : Title
         titleType = "Water Title";
         titleDescripion = "Good for fishing and water collection";
     }
+    //INHERITANCE
     protected override void MakeSound()
     {
         Debug.Log("*waves sounds*");

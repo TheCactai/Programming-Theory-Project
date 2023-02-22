@@ -9,6 +9,7 @@ public class CastleTitle : Title
         titleType = "Castle";
         titleDescripion = "This is the center of the city";
     }
+    //INHERITANCE
     protected override void MakeSound()
     {
         Debug.Log("*people talking*");

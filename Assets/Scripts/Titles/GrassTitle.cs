@@ -10,6 +10,7 @@ public class GrassTitle : Title
         titleType = "Grass Title";
         titleDescripion = "Good for farms and animals";
     }
+    //INHERITANCE
     protected override void MakeSound()
     {
         Debug.Log("*grass ruffles*");

@@ -5,16 +5,18 @@ using TMPro;
 
 public abstract class Title : MonoBehaviour
 {
-    [SerializeField] private GameObject infoPanel;
-    [SerializeField] private TMP_Text titleTypeT;
-    [SerializeField] private TMP_Text titleDescriptionT;
-    protected string titleType = "unknown";
-    protected string titleDescripion = "unknown";
+    private static GameObject infoPanel;
+    private static TMP_Text titleTypeT;
+    private static TMP_Text titleDescriptionT;
+    protected string titleType;
+    protected string titleDescripion;
     void Start()
     {
-
+        infoPanel = GameObject.Find("InfoPanel");
+        titleTypeT = GameObject.Find("TitleType").GetComponent<TMP_Text>();
+        titleDescriptionT = GameObject.Find("TitleDescription").GetComponent<TMP_Text>();
     }
-    void OnMouseDown()
+    protected virtual void OnMouseDown()
     {
         OpenMenu();
     }

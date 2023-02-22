@@ -8,8 +8,8 @@ public abstract class Title : MonoBehaviour
     private static GameObject infoPanel;
     private static TMP_Text titleTypeT;
     private static TMP_Text titleDescriptionT;
-    protected string titleType;
-    protected string titleDescripion;
+    protected string titleType{private get; set;}
+    protected string titleDescripion{private get; set;}
     void Start()
     {
         infoPanel = GameObject.Find("InfoPanel");
